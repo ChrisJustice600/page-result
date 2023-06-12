@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Hank";
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Hank";
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* hauteur égale à celle de l'écran */
+  }
+
+.content-wrap {
+    width: 500px;
+    height: 350px;
+    /* height: auto; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 15px 5px hsl(221, 100%, 96%) ;
+    
+}
+.card-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 25px 40px;
+    background: linear-gradient(to top, hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+}
+.card-left h4 {
+    color: rgb(198, 198, 198);
+    font-weight: 500;
+
+}
+.round {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.round .number1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.round .number2 {
+    font-size: 12px;
+    font-weight: normal;
+    color: hsl(241, 100%, 89%);
+}
+
+.card-left h2 {
+    font-size: larger;
+    color: white;
+    font-weight: 600;
+}
+.card-left p {
+    font-size: 12px;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* SUMMARY STYLE */
+.card-right {
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+}
+.card-right h3 {
+    color: hsl(224, 30%, 27%);
+}
+.table {
+    padding-top: 12px;
+    margin-top: 5px;
+}
+.table .titre{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.table .titre .type, .pourcent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 0.6em;
+   
+}
+.table .titre .type.color1{
+    color: hsl(0, 100%, 67%);
+}
+.table .titre .type.color2{
+    color: hsl(39, 100%, 56%);
+} 
+.table .titre .type.color3{
+    color: hsl(166, 100%, 37%);
+}
+.table .titre .type.color4{
+    color: hsl(234, 85%, 45%);
+}
+
+.table .titre.un{
+    background: hsla(0, 100%, 67%, 0.151);
+}
+.table .titre.deux{
+    background: hsla(39, 100%, 56%, 0.151);
+}
+.table .titre.trois{
+    background: hsla(166, 100%, 37%, 0.151);
+}
+.table .titre.quatre{
+    background: hsla(234, 85%, 45%, 0.151);
+}
+.type  {
+    gap: 0.6em;
+    
+}
+
+.pourcent span {
+    color: rgb(198, 198, 198);
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    columns: white;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 0;
+    border-radius: 30px;
+    background: hsl(224, 30%, 27%);
+    color: white;
+}
+
+
+@media screen and (max-width:760px){
+    .content-wrap {
+        height: auto;
+        flex-direction: column;
+        /* margin-top: 100px; */
+        
+    }
+    .center {
+        height: auto; /* hauteur égale à celle de l'écran */
+      }
+    .card-left,
+    .card-right {
+        width: 100%;
+        padding: 20px;
+    }
+    .card-left {
+        border-radius: 0 0 25px 25px;
+    }
+    
+}
+
